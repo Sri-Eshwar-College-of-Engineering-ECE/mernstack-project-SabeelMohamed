@@ -1,0 +1,109 @@
+.about {
+  padding-top: 70px;
+}
+
+.about-hero {
+  min-height: 400px;
+  background: linear-gradient(green, grey),
+              url('/images/about-bg.jpg') center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+.about-hero p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  color: black;
+}
+
+.about-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.about-section {
+  max-width: 800px;
+  margin: 0 auto 4rem;
+  text-align: center;
+}
+
+.about-section h2 {
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 4rem 0;
+}
+
+.about-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.team-section {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.team-section h2 {
+  margin-bottom: 3rem;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.team-member {
+  text-align: center;
+}
+
+.team-member img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.team-member h3 {
+  margin-bottom: 0.5rem;
+}
+
+.team-member p {
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    height: 200px;
+  }
+
+  .about-hero h1 {
+    font-size: 2rem;
+  }
+}

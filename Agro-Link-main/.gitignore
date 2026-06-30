@@ -1,0 +1,9 @@
+node_modules
+dist
+build
+*.log
+.env
+.env.*
+agro-back/node_modules
+agrolink/agrolink/node_modules
+agrolink/agrolink/dist

@@ -1,0 +1,94 @@
+.top-navbar {
+  height: 70px;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+  position: fixed;
+  top: 0;
+  left: 250px;
+  right: 0;
+  z-index: 90;
+}
+
+.navbar-content {
+  height: 100%;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-title {
+  margin: 0;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: rgba(10, 14, 39, 0.6);
+  border-radius: 8px;
+}
+
+.user-icon {
+  font-size: 1.2rem;
+}
+
+.user-email {
+  color: #a0aec0;
+}
+
+.btn-logout {
+  padding: 0.5rem 1rem;
+  background: rgba(220, 38, 38, 0.2);
+  border: 1px solid rgba(220, 38, 38, 0.3);
+  color: #fca5a5;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 600;
+}
+
+.btn-logout:hover {
+  background: rgba(220, 38, 38, 0.3);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .top-navbar {
+    left: 70px;
+  }
+  
+  .page-title {
+    font-size: 1.2rem;
+  }
+  
+  .user-email {
+    display: none;
+  }
+}
+
+/* Professional theme overrides */
+.top-navbar {
+  background: rgba(255, 255, 255, 0.92);
+  border-bottom: 1px solid var(--line);
+}
+.page-title, .user-email { color: var(--text); }
+.user-info {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--line);
+}
+.btn-logout {
+  border: 1px solid var(--line);
+  color: var(--text);
+  background: rgba(239, 83, 80, 0.18);
+}
